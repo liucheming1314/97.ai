@@ -1,133 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-55TVVR9H');</script>
-<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexusPay Solutions - Programmatic Spend Management</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="97.ai - Ultra-premium 2-character AI domain for sale. Secure escrow transfer available.">
+    <title>97.ai — Premium Digital Asset For Sale</title>
     <style>
-        /* Professional B2B Aesthetic */
-        body { font-family: 'Inter', 'Arial', sans-serif; margin: 0; padding: 0; background-color: #ffffff; color: #1e293b; line-height: 1.6; }
-     .header { background-color: #0f172a; color: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 5px solid #007bff; }
-     .logo { font-size: 26px; font-weight: 700; color: #ffffff; }
-     .hero { background: #0f172a; color: white; text-align: center; padding: 100px 5%; }
-     .hero h1 { font-size: 48px; margin-bottom: 15px; font-weight: 900; }
-     .hero p { font-size: 22px; color: #94a3b8; margin-bottom: 50px; }
-     .section { padding: 80px 5%; text-align: center; }
-     .section h2 { font-size: 36px; font-weight: 700; margin-bottom: 50px; color: #1e293b; }
-     .features { display: flex; justify-content: space-between; gap: 40px; }
-     .feature-item { flex: 1; padding: 30px; background: #f8fafc; border-radius: 12px; text-align: left; transition: transform 0.3s; border: 1px solid #e2e8f0; }
-     .feature-item h3 { color: #007bff; font-size: 24px; margin-bottom: 15px; }
-     .feature-item p { color: #475569; }
-     .compliance-block { background-color: #e6f3ff; padding: 60px 5%; margin-top: 60px; text-align: left; border-radius: 12px; }
-     .compliance-block h2 { color: #0f172a; text-align: center; }
-     .footer { background-color: #1e293b; color: #94a3b8; text-align: center; padding: 30px 5%; font-size: 14px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #060913;
+            color: #f3f4f6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            overflow-x: hidden;
+        }
+        /* 核心发光背景修饰 */
+        .bg-glow {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(6, 9, 19, 0) 70%);
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        .container {
+            max-width: 720px;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            background: rgba(37, 99, 235, 0.08);
+            color: #3b82f6;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.1);
+        }
+        .badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background-color: #3b82f6;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #3b82f6;
+        }
+        h1 {
+            font-size: clamp(3.5rem, 8vw, 5.5rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        p.desc {
+            font-size: 1.15rem;
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 48px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            box-shadow: 0 8px 25px -5px rgba(37, 99, 235, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px -5px rgba(37, 99, 235, 0.7);
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        }
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.03);
+            color: #e2e8f0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+        .trust-badge {
+            margin-top: 48px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        footer {
+            font-size: 0.85rem;
+            color: #475569;
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55TVVR9H"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    
-    <div class="header">
-        <div class="logo">NexusPay Solutions</div>
-        <nav>
-            <a href="#platform" style="color: white; margin-left: 20px; text-decoration: none;">Platform</a>
-            <a href="#usecases" style="color: white; margin-left: 20px; text-decoration: none;">Use Cases</a>
-            <a href="#clients" style="color: white; margin-left: 20px; text-decoration: none;">Clients</a>
-            <a href="#tech" style="color: white; margin-left: 20px; text-decoration: none;">Technology</a>
-            <a href="mailto:sales@97.ai" style="background-color: #007bff; color: white; padding: 8px 18px; text-decoration: none; border-radius: 5px; margin-left: 20px;">Contact Sales</a>
-        </nav>
-    </div>
-
-    <div class="hero">
-        <h1>Programmatic Spend Management: Scale with Confidence.</h1>
-        <p>Issue virtual cards, enforce precise controls, and automate your global B2B payments through a single API connection.</p>
-        <a href="mailto:sales@97.ai" style="background-color: #007bff; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">Contact Sales Today</a>
-    </div>
-
-    <div class="section" id="platform">
-        <h2>Your Partner for Next-Generation Commercial Issuing</h2>
-        <div class="features">
-            <div class="feature-item">
-                <h3>Unmatched Velocity & Isolation</h3>
-                <p>Designed for **high-throughput transaction monitoring**, our API allows partners to issue hundreds of single-use virtual cards daily, ensuring **account isolation** for every vendor, test environment, or digital identity.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Granular Spend Governance</h3>
-                <p>Programmatically set **$1.00 precise transaction limits** and strict usage controls (MCC restrictions, expiration dates), mitigating fraud and preventing unauthorized overspending.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Real-time Lifecycle Control</h3>
-                <p>Manage the full card lifecycle: instant creation, real-time authorization approvals, and immediate API-driven card freezing/destruction upon completion of the intended transaction.[1]</p>
-            </div>
+    <div class="bg-glow"></div>
+    <div class="container">
+        <div class="badge">Exclusive Digital Asset</div>
+        <h1>97.ai</h1>
+        <p class="desc">
+            This ultra-premium 2-character AI domain is currently available for acquisition by serious enterprises, investors, and innovators.
+        </p>
+        <div class="btn-group">
+            <a href="https://www.afternic.com/domain/97.ai" class="btn btn-primary" target="_blank">Make an Offer / Buy Now</a>
+            <a href="mailto:qq432617@gmail.com?subject=Inquiry%20regarding%2097.ai" class="btn btn-secondary">Inquire via Email</a>
+        </div>
+        
+        <div class="trust-badge">
+            <div class="trust-item">🔒 Secure Escrow Available</div>
+            <div class="trust-item">⚡ Fast Ownership Transfer</div>
         </div>
     </div>
-
-    <div class="section" id="usecases">
-        <h2>Supported Enterprise Use Cases</h2>
-        <div class="features" style="justify-content: center;">
-            <div class="feature-item" style="flex-basis: 30%;">
-                <h3>Global Procurement</h3>
-                <p>Securely pay global suppliers and vendors. Use one-time cards for Accounts Payable, dramatically reducing fraud risk and simplifying reconciliation.[2]</p>
-            </div>
-            <div class="feature-item" style="flex-basis: 30%;">
-                <h3>Digital Account Validation</h3>
-                <p>Execute low-amount authorization tests to programmatically verify the existence and connectivity of third-party digital accounts, ad networks, and SaaS subscriptions.</p>
-            </div>
-            <div class="feature-item" style="flex-basis: 30%;">
-                <h3>Expense Management Platforms</h3>
-                <p>Integrate our issuing capabilities into your corporate platform to empower your users with controlled, budget-locked employee and contractor cards.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="section" id="clients" style="background-color: #f0f4f8;">
-        <h2>Who We Empower: Ideal Client Profiles</h2>
-        <div class="features">
-            <div class="feature-item" style="background: white;">
-                <h3>Fintech & BaaS Platforms</h3>
-                <p>Companies building embedded finance solutions that require real-time, compliant card issuance capabilities without obtaining their own BIN sponsorship.[3]</p>
-            </div>
-            <div class="feature-item" style="background: white;">
-                <h3>E-commerce Marketplaces</h3>
-                <p>Platforms that need to issue cards to suppliers, facilitate platform payouts, or manage complex cross-border expense accounts securely.</p>
-            </div>
-            <div class="feature-item" style="background: white;">
-                <h3>Global MarTech Agencies</h3>
-                <p>Organizations that manage high-volume digital advertising spend and require granular control over individual ad network budgets and account validation workflows.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="compliance-block" id="tech">
-        <h2>Technology & Compliance Infrastructure</h2>
-        <div style="display: flex; gap: 40px; text-align: left;">
-            <div style="flex: 1;">
-                <h3>Compliance-First Design</h3>
-                <p>We handle the regulatory complexities of BIN Sponsorship, PCI DSS certification, and scheme compliance. Our platform provides the necessary **Audit-Ready transaction data** required for large-scale commercial card programs.</p>
-            </div>
-            <div style="flex: 1;">
-                <h3>Developer Tools</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 10px; color: #007bff; font-weight: bold;">— RESTful API for full card control</li>
-                    <li style="margin-bottom: 10px; color: #007bff; font-weight: bold;">— Automated AML/KYC checks for cardholders</li>
-                    <li style="margin-bottom: 10px; color: #007bff; font-weight: bold;">— Interchange revenue optimization reporting</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>NexusPay Solutions, a Delaware LLC. | <a href="#tech" style="color: #94a3b8;">Compliance</a> | <a href="mailto:sales@97.ai" style="color: #94a3b8;">Contact</a></p>
-        <p>© 2025 NexusPay Solutions. All rights reserved. Cards issued by partner banks pursuant to Visa and Mastercard licenses.</p>
-    </div>
+    <footer>
+        &copy; <script>document.write(new Date().getFullYear())</script> 97.ai. All rights reserved.
+    </footer>
 </body>
 </html>
